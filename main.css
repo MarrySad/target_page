@@ -1,0 +1,114 @@
+.page {
+  margin: 0 auto;
+  width: 346px;
+  border: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-family: "Calibri", sans-serif;
+  font-weight: 500;
+  color: #5a6470;
+}
+
+.page__title {
+  color: #fff;
+  background-color: #494949;
+  line-height: 1.9em;
+  padding: 0 12px;
+}
+
+.page__content {
+  background-color: #f2f2f2;
+  padding: 12px;
+}
+
+.content__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 9px;
+}
+
+.attribute {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: small;
+  margin: 10px 20px 10px 0;
+}
+
+.progress {
+  width: 40%;
+  height: 13px;
+  background-color: #d3cfce;
+}
+
+.progress__current {
+  position: relative;
+  width: 90%;
+  height: 7px;
+  background-color: #0488d0;
+  margin: 3px;
+}
+
+.progress__title {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: small;
+  position: absolute;
+  right: -9px;
+  top: 20px;
+}
+
+.progress__title::after {
+  content: "";
+  border: 5px solid transparent;
+  border-bottom: 6px solid #5a6470;
+  position: absolute;
+  left: 7px;
+  top: -12px;
+}
+
+.target {
+  background: linear-gradient(to top, #717173, #a4a2a3);
+  border: 1px solid #dadadc;
+  border-radius: 3px;
+}
+
+.target__title {
+  color: #fff;
+  border-bottom: 1px solid #717173;
+  font-weight: 100;
+  font-size: 0.9em;
+  padding: 0 5px;
+}
+
+.target__value {
+  color: #fff;
+  border-top: 1px solid #a4a2a3;
+  font-family: "Arial", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-size: small;
+}
+
+.message__icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(./i.png) no-repeat center;
+  background-size: cover;
+  margin-right: 0.3rem;
+  margin-bottom: -0.3rem;
+}
