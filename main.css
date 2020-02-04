@@ -48,10 +48,14 @@
 
 .progress__current {
   position: relative;
-  width: 90%;
+  width: 0%;
   height: 7px;
   background-color: #0488d0;
   margin: 3px;
+  animation-name: progress__current;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .progress__title {
@@ -111,4 +115,9 @@
   background-size: cover;
   margin-right: 0.3rem;
   margin-bottom: -0.3rem;
+}
+
+@keyframes progress__current {
+  0% {width: 0%;}
+  100% {width: 90%;}
 }
